@@ -1,4 +1,14 @@
+// change color
+
+document.getElementById("theme-btn")
+.addEventListener("click", function() {
+  let randomColor ="#" + Math.floor(Math.random() * 16777215).toString(16); 
+  document.body.style.backgroundColor = randomColor; 
+});
+
+
 // button and activity log
+
 
 document.getElementById("buttonContainer").addEventListener("click", function (event) {
   if (event.target.tagName.toLowerCase() === "button") {
@@ -33,6 +43,12 @@ document.getElementById("buttonContainer").addEventListener("click", function (e
       let entry = document.createElement("div");
       entry.textContent = `You have Completed The Task "${taskName}" at ${new Date().toLocaleTimeString()}`;
       log.appendChild(entry);
+      if (parseInt(taskCount.textContent) === 0) {
+        setTimeout(() => {
+            alert("Congrats!!! You have successfully completed all the current tasks");
+        }, 500);
+    }
+
   }
 });
 

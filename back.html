@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-5</title>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+   
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="m-10">
+    <section>
+        <div class="navbar bg-base-100 shadow-lg rounded-lg">
+            <div class="flex-1">
+                <div class="flex items-center gap-2">
+                    <img src="./assets/logo.png" alt="">
+              <h1 class=" text-3xl">Dev<span class="font-bold">Board</span></h1>
+                </div>
+            </div>
+            <div>
+                   <button id="backBtn" class="bg-blue-500 text-white px-4 py-2 rounded-md mt-3 mb-5">Back To Desk</button>
+            </div>
+            </div>
+            </section>
+
+            <section class="bg-gray-50">
+                <h1 class="text-center text-3xl font-bold my-10">Blogs</h1>
+                <div class=" bg-white rounded-lg p-6 my-10">
+                    <h3  class="text-black text-xl font-bold mb-5">Question-1: What are the different ways to select an element in the DOM?</h3>
+                    <p class="text-sm text-black">There are multiple choices to select an element in DOM. There are getElementByID, getElementsByClass,getElementsByTagName, querySelector, querySelectorAll and so on.</p>
+                </div>
+                <div class=" bg-white rounded-lg p-6 my-10">
+                    <h3  class="text-black text-xl font-bold mb-5">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h3>
+                    <p class="text-sm text-black">innerHTML returns texts including html tags,while innerText returns texts , only visible on the screen ignoring html tags, and textContent returns all texts, including hidden elements.</p>
+                </div>
+                <div class=" bg-white rounded-lg p-6 my-10">
+                    <h3  class="text-black text-xl font-bold mb-5">Question-3: What is event delegation in the DOM?</h3>
+                    <p class="text-sm text-black">Event delegation is a method where a single event listener is added to a parent element instead of multiple listeners to each child. That makes the things way easier. </p>
+                </div>
+                <div class=" bg-white rounded-lg p-6 my-10">
+                    <h3  class="text-black text-xl font-bold mb-5">Question-4: What is event bubbling in the DOM?</h3>
+                    <p class="text-sm text-black">Event bubbling is when an event starts at the target element and bubbles up to  parents. </p>
+                </div>
+                <div class=" bg-white rounded-lg p-6 my-10">
+                    <h3 class="text-black text-xl font-bold mb-5">Question-5: How do you create, add, and remove elements using JavaScript?</h3>
+                    <p class="text-sm text-black">document.createElement(), appendChild() to create and add elements and removeChild() to remove elements from DOM.</p>
+                </div>
+            </section>
+
+    <script src="./script/back.js"></script>
+</body>
+</html>
